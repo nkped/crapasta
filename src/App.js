@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { Button } from "react-bootstrap";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const allSubjects = [
+    "react",
+    "react-bootstrap",
+    "react-router",
+    "react-router",
+    "github",
+    "github",
+    "github-pages",
+    "git",
+  ];
+
+  const uniqueSubjects = new Set(allSubjects);
+
+  console.log(uniqueSubjects);
+
+  return <div></div>;
 }
 
 export default App;
