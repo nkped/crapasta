@@ -1,24 +1,15 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { Button } from "react-bootstrap";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 function App() {
-  const allSubjects = [
-    "react",
-    "react-bootstrap",
-    "react-router",
-    "react-router",
-    "github",
-    "github",
-    "github-pages",
-    "git",
-  ];
+  const md = `# Header *emphasis* \n\n linebreak`;
 
-  const uniqueSubjects = new Set(allSubjects);
-
-  console.log(uniqueSubjects);
-
-  return <div></div>;
+  return (
+    <div className="App">
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>{md}</ReactMarkdown>
+    </div>
+  );
 }
 
 export default App;
