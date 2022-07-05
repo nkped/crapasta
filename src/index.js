@@ -7,11 +7,18 @@ import reportWebVitals from "./reportWebVitals";
 
 import "./custom.scss";
 
+import Blog from "./blog";
+import Blogpost from "./blogpost";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route path="/" element={<App />}>
+        <Route path="blog" element={<Blog />}>
+          <Route path=":blogpostId" element={<Blogpost />} />
+        </Route>
+      </Route>
     </Routes>
   </BrowserRouter>
 );

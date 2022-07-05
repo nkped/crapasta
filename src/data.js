@@ -50,7 +50,7 @@ let blogPosts = [
     author: "Nils-Kristian Pedersen",
   },
   {
-    number: 55,
+    number: 66,
     subject: "javascript",
     titel: "Emne-knapper til søgning i blogposts",
     intro:

@@ -1,12 +1,13 @@
 import "./App.css";
-import { FilterButtons } from "./filterButtons";
+import { Link, Outlet } from "react-router-dom";
 
 function App() {
   return (
     <div>
       <h1>Testing</h1>
 
-      <FilterButtons />
+      <Link to="/blog">Blog</Link>
+      <Outlet />
     </div>
   );
 }

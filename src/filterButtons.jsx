@@ -14,12 +14,6 @@ export function FilterButtons() {
 
   const subjects = ["react", "git"];
 
-  const handleOnClick = subjects.map((subject) => ({
-   `${ subject }`
-  }));
-
-  console.log(handleOnClick);
-
   let btn = subjects.map((subject) => <button key={subject}>{subject}</button>);
 
   return (
