@@ -1,13 +1,12 @@
 import "./App.css";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
+import { FilterButtons } from "./filterButtons";
 
 function App() {
-  const md = `# Header *emphasis* \n\n linebreak`;
-
   return (
-    <div className="App">
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>{md}</ReactMarkdown>
+    <div>
+      <h1>Testing</h1>
+
+      <FilterButtons />
     </div>
   );
 }
